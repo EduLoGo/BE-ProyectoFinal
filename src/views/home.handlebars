@@ -1,0 +1,30 @@
+<div>
+  <h1 class="text-center p-2 text-bg-info">Lista de Productos</h1>
+  <div class="container-xl text-center">
+    <div class="row">
+      {{#each dataDB}}
+        <div class="col-md-6">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="{{this.thumbnail}}"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">{{this.title}}</h5>
+                  <p class="card-text">{{this.description}}</p>
+                  <p class="card-text">Stock: {{this.stock}} Unidades</p>
+                  <p class="card-text" class="text-body-secondary fw-bold"><strong>${{this.price}}</strong></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+</div>

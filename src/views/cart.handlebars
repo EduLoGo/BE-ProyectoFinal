@@ -1,0 +1,34 @@
+{{#if cart}}
+    <table class="table text-center align-middle">
+      <thead>
+        <tr>
+          <th scope="col"></th>
+          <th scope="col">Producto</th>
+          <th scope="col">Unidades</th>
+          <th scope="col">Precio</th>
+        </tr>
+      </thead>
+      <tbody class="table-group-divider">
+        {{#if cart.products}}
+          {{#each cart.products}}
+          <tr>
+            <th><img src="{{this.product.thumbnail}}" style="max-width: 50px" alt="{{this.product.title}}"></th>
+            <td><strong>{{this.product.title}}</strong></td>
+            <td>{{this.quantity}}</td>
+            <td>${{this.product.price}}</td>
+          </tr>
+          {{/each}}
+        {{else}}
+          <tr>
+            <td colspan="4"><strong>No hay productos en el carrito</strong></td>
+          </tr>  
+        {{/if}}
+        <tr>
+          <td colspan="3"><strong>Total</strong></td>
+          <td>$</td>
+      </tbody>
+    </table>
+
+{{else}}
+  <h3 class="text-center">Carrito no Encontrado</h3>
+{{/if}}

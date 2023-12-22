@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="row">
+    {{#each products}}
+      <div class="col-md-4 p-2">
+        <div class="card border-1 mb-3">
+          <a href="/products/{{this._id}}" class="text-decoration-none">
+            <img
+              src="{{this.thumbnail}}"
+              class="card-img-top"
+              alt="{{this.title}}"
+            />
+          </a>
+          <div class="card-body text-center">
+            <p class="card-text text-dark">{{this.title}}</p>
+            <p class="card-text text-dark">Categoría: {{this.category}}</p>
+            <p><span class="text-danger">${{this.price}}</span></p>
+            <button class="btn btn-dark" onclick="agregarProductoAlCarrito('{{product._id}}')">Agregar al carrito</button>
+            <a href="/products/{{this._id}}"><button class="btn btn-dark">Detalles</button></a>
+          </div>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+  <div class="row my-5">
+    <div class="col">
+      <nav class="pagination justify-content-center">
+        {{#if hasPrevPage}}
+          <a href="?page=1&limit={{limit}}&sort={{sort}}&query={{query}}" class="btn btn-light btn-outline-dark ">Primera</a>
+          <a href="?page={{prevPage}}&limit={{limit}}&sort={{sort}}&query={{query}}" class="btn btn-light btn-outline-dark"><<</a>
+        {{/if}}
+        {{#if hasNextPage}}
+          <a href="?page={{nextPage}}&limit={{limit}}&sort={{sort}}&query={{query}}" class="btn btn-light btn-outline-dark">>></a>
+          <a href="?page={{totalPages}}&limit={{limit}}&sort={{sort}}&query={{query}}" class="btn btn-light btn-outline-dark">Última</a>
+        {{/if}}
+      </nav>
+    </div>
+  </div>
+</div>

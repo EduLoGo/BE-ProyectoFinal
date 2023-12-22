@@ -1,0 +1,101 @@
+<div>
+  <h1 class="text-center p-2 text-bg-info">Cargar Productos</h1>
+  <div class="container-fluid text-center">
+    <div class="row justify-content-center">
+      <div class="col-lg-6 col-md-12">
+        <div id="mainDiv" class="row">
+          {{#each dataDB}}
+            <div class="col-6">
+              <div class="card mb-2">
+                <div class="card-header"><h6
+                    class="card-title"
+                  >{{this.title}}</h6></div>
+                <div class="card-body row">
+                  <p>Descripción: {{this.description}}</p>
+                  <div class="card-text col-6">
+                    <li>Precio: ${{this.price}}</li>
+                  </div>
+                  <div class="card-text col-6">
+                    <li>Stock Disponible: {{this.stock}}</li>
+                  </div>
+                </div>
+              </div>
+            </div>
+          {{/each}}
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-12">
+        <h1 class="text-center">Añadir nuevo Producto</h1>
+        <form id="form" class="row" action="/realtimeproducts" method="post">
+          <div class="mb-1">
+            <label for="title" class="form-label">Titulo</label>
+            <input
+              type="text"
+              class="form-control form-control-sm"
+              id="inputTitle"
+              name="title"
+              required
+            />
+          </div>
+          <div class="mb-1">
+            <label for="description" class="form-label">Descripción</label>
+            <input
+              type="text"
+              class="form-control form-control-sm"
+              id="inputDescription"
+              name="description"
+              required
+            />
+          </div>
+          <div class="mb-1">
+            <label for="code" class="form-label">Código</label>
+            <input
+              type="text"
+              class="form-control form-control-sm"
+              id="inputCode"
+              name="code"
+              required
+            />
+          </div>
+          <div class="mb-1">
+            <label for="price" class="form-label">Precio</label>
+            <input
+              type="number"
+              class="form-control form-control-sm"
+              id="inputPrice"
+              name="price"
+              required
+            />
+          </div>
+          <div class="mb-1">
+            <label for="stock" class="form-label">Stock</label>
+            <input
+              type="number"
+              class="form-control form-control-sm"
+              id="inputStock"
+              name="stock"
+              required
+            />
+          </div>
+          <div class="mb-1">
+            <label for="thumbnail" class="form-label">URL de la imagen</label>
+            <input
+              type="text"
+              class="form-control form-control-sm"
+              id="inputThumbnail"
+              name="thumbnail"
+            />
+          </div>
+          <div class="flex-row"><button
+              type="submit"
+              class="btn btn-primary"
+              id="submitButton"
+              style="width:200px;"
+            >Añadir Producto</button></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/main.js"></script>

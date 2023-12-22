@@ -1,1 +1,146 @@
-[{"id":1,"title":"Fanta Naranja x 1.5L","description":"Gaseosa","price":300,"thumbnail":["https://depotexpress.com.ar/wp-content/uploads/2022/05/FANTA-NARANJA-X-1.5L.png"],"code":"ga-001","stock":35,"status":true},{"id":2,"title":"Sprite x 1.5L","description":"Gaseosa","price":300,"thumbnail":["https://depotexpress.com.ar/wp-content/uploads/2022/05/GASEOSA-SPRITE-SIN-AZUCAR-X-1.5.png"],"code":"ga-001","stock":35,"status":true},{"id":3,"title":"Coca Cola x 1.5L","description":"Gaseosa","price":300,"thumbnail":["https://depotexpress.com.ar/wp-content/uploads/2022/05/GASEOSA-COCA-COLA-PET-X-1.5.png"],"code":"s-123","stock":35,"status":true},{"id":4,"title":"Fernet Branca x 750cc","description":"Aperitivos","price":2300,"thumbnail":["https://depotexpress.com.ar/wp-content/uploads/2022/05/FERNET-BRANCA-X-750.png"],"code":"ap-001","stock":35,"status":true},{"id":5,"title":"Americano Gancia x 950cc","description":"Aperitivos","price":1250,"thumbnail":["https://depotexpress.com.ar/wp-content/uploads/2022/05/VERMU-AMERICANO-GANCIA-X-900c.c..png"],"code":"ap-002","stock":20,"status":true},{"id":6,"title":"Vermu Campari x 750ml","description":"Aperitivos","price":1500,"thumbnail":["https://depotexpress.com.ar/wp-content/uploads/2022/05/VERMU-CAMPARI-X-750ML.png"],"code":"ap-003","stock":10,"status":true},{"id":7,"title":"Vino Don Nicanor Malbec x 750cc","description":"Vinos","price":3000,"thumbnail":["https://depotexpress.com.ar/wp-content/uploads/2022/05/D.NICANOR-MALB.png"],"code":"vs-001","stock":20,"status":true},{"id":8,"title":"Vino Escorihuela Gascon Rose x 750cc","description":"Vinos","price":2700,"thumbnail":["https://depotexpress.com.ar/wp-content/uploads/2022/05/E.GASCO-RES-ROSE.png"],"code":"vs-002","stock":15,"status":true},{"id":9,"title":"Cerveza Budweiser Botella x 710cc","description":"Cerveza","price":530,"thumbnail":["https://depotexpress.com.ar/wp-content/uploads/2022/05/CERVEZA-BUDWEISER-X-710.png"],"code":"ce-001","stock":50,"status":true},{"id":10,"title":"Cerveza Corona Botella x 710cc","description":"Cerveza","price":730,"thumbnail":["https://depotexpress.com.ar/wp-content/uploads/2022/05/CERVEZA-CORONA-BOT-X-710.png"],"code":"ce-002","stock":60,"status":true},{"id":11,"title":"Galletitas Sonrisas","description":"Galletitas","price":190,"thumbnail":["https://depotexpress.com.ar/wp-content/uploads/2022/05/GALLETITAS-SONRISAS-FRAMBUESA-X-118.png"],"code":"ga-001","stock":100,"status":true},{"id":12,"title":"Galletitas Pepitos","description":"Galletitas","price":250,"thumbnail":["https://depotexpress.com.ar/wp-content/uploads/2022/05/GALLETITAS-PEPITOS-TRADICIONAL-X-118.png"],"code":"ga-002","stock":88,"status":true}]
+[
+  {
+    "id": 1,
+    "title": "Fanta Naranja x 1.5L",
+    "description": "Gaseosa",
+    "price": 300,
+    "thumbnail": [
+      "https://depotexpress.com.ar/wp-content/uploads/2022/05/FANTA-NARANJA-X-1.5L.png"
+    ],
+    "code": "ga-001",
+    "stock": 35,
+    "status": true
+  },
+  {
+    "id": 2,
+    "title": "Sprite x 1.5L",
+    "description": "Gaseosa",
+    "price": 300,
+    "thumbnail": [
+      "https://depotexpress.com.ar/wp-content/uploads/2022/05/GASEOSA-SPRITE-SIN-AZUCAR-X-1.5.png"
+    ],
+    "code": "ga-001",
+    "stock": 35,
+    "status": true
+  },
+  {
+    "id": 3,
+    "title": "Coca Cola x 1.5L",
+    "description": "Gaseosa",
+    "price": 300,
+    "thumbnail": [
+      "https://depotexpress.com.ar/wp-content/uploads/2022/05/GASEOSA-COCA-COLA-PET-X-1.5.png"
+    ],
+    "code": "s-123",
+    "stock": 35,
+    "status": true
+  },
+  {
+    "id": 4,
+    "title": "Fernet Branca x 750cc",
+    "description": "Aperitivos",
+    "price": 2300,
+    "thumbnail": [
+      "https://depotexpress.com.ar/wp-content/uploads/2022/05/FERNET-BRANCA-X-750.png"
+    ],
+    "code": "ap-001",
+    "stock": 35,
+    "status": true
+  },
+  {
+    "id": 5,
+    "title": "Americano Gancia x 950cc",
+    "description": "Aperitivos",
+    "price": 1250,
+    "thumbnail": [
+      "https://depotexpress.com.ar/wp-content/uploads/2022/05/VERMU-AMERICANO-GANCIA-X-900c.c..png"
+    ],
+    "code": "ap-002",
+    "stock": 20,
+    "status": true
+  },
+  {
+    "id": 6,
+    "title": "Vermu Campari x 750ml",
+    "description": "Aperitivos",
+    "price": 1500,
+    "thumbnail": [
+      "https://depotexpress.com.ar/wp-content/uploads/2022/05/VERMU-CAMPARI-X-750ML.png"
+    ],
+    "code": "ap-003",
+    "stock": 10,
+    "status": true
+  },
+  {
+    "id": 7,
+    "title": "Vino Don Nicanor Malbec x 750cc",
+    "description": "Vinos",
+    "price": 3000,
+    "thumbnail": [
+      "https://depotexpress.com.ar/wp-content/uploads/2022/05/D.NICANOR-MALB.png"
+    ],
+    "code": "vs-001",
+    "stock": 20,
+    "status": true
+  },
+  {
+    "id": 8,
+    "title": "Vino Escorihuela Gascon Rose x 750cc",
+    "description": "Vinos",
+    "price": 2700,
+    "thumbnail": [
+      "https://depotexpress.com.ar/wp-content/uploads/2022/05/E.GASCO-RES-ROSE.png"
+    ],
+    "code": "vs-002",
+    "stock": 15,
+    "status": true
+  },
+  {
+    "id": 9,
+    "title": "Cerveza Budweiser Botella x 710cc",
+    "description": "Cerveza",
+    "price": 530,
+    "thumbnail": [
+      "https://depotexpress.com.ar/wp-content/uploads/2022/05/CERVEZA-BUDWEISER-X-710.png"
+    ],
+    "code": "ce-001",
+    "stock": 50,
+    "status": true
+  },
+  {
+    "id": 10,
+    "title": "Cerveza Corona Botella x 710cc",
+    "description": "Cerveza",
+    "price": 730,
+    "thumbnail": [
+      "https://depotexpress.com.ar/wp-content/uploads/2022/05/CERVEZA-CORONA-BOT-X-710.png"
+    ],
+    "code": "ce-002",
+    "stock": 60,
+    "status": true
+  },
+  {
+    "id": 11,
+    "title": "Galletitas Sonrisas",
+    "description": "Galletitas",
+    "price": 190,
+    "thumbnail": [
+      "https://depotexpress.com.ar/wp-content/uploads/2022/05/GALLETITAS-SONRISAS-FRAMBUESA-X-118.png"
+    ],
+    "code": "ga-001",
+    "stock": 100,
+    "status": true
+  },
+  {
+    "id": 12,
+    "title": "Galletitas Pepitos",
+    "description": "Galletitas",
+    "price": 250,
+    "thumbnail": [
+      "https://depotexpress.com.ar/wp-content/uploads/2022/05/GALLETITAS-PEPITOS-TRADICIONAL-X-118.png"
+    ],
+    "code": "ga-002",
+    "stock": 88,
+    "status": true
+  }
+]

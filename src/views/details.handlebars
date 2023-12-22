@@ -1,0 +1,27 @@
+{{#if product}}
+  {{#each product}}
+    <div class="card mb-3 m-3">
+      <div class="row g-0 ">
+        <div class="col-md-4">
+          <img src="{{thumbnail}}" class="img-fluid rounded-start" alt="..." />
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h4 class="card-title">{{title}}</h4>
+            <p class="card-text">{{description}}</p>
+            <p class="card-text">Categoría: {{this.category}}</p>
+            <h6 class="card-text">${{price}}</h6>
+          </div>
+          <div>
+            <a class="btn btn-warning" href="#">Agregar al Carrito</a>
+            <a class="btn btn-info" href="/products?limit={{limit}}&page={{page}}&query={{query}}&sort={{sort}}">Volver</a>
+            {{!-- <a class="btn btn-info" href="/products">Volver</a> --}}
+          </div>
+        </div>
+      </div>
+    </div>
+  {{/each}}
+
+{{else}}
+  <p>Producto no encontrado</p>
+{{/if}}

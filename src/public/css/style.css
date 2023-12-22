@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#logMsg {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: #cfd8dc;
+}
+
+.Navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.Navbar li {
+  padding-left: 1rem;
+  font-size: 25px;
+}

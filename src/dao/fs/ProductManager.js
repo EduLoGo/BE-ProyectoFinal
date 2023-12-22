@@ -29,7 +29,7 @@ class ProductManager {
   // Agregar Producto
   async addProduct(newProduct) {
     try {
-      const dataDB = this.loadData();
+      const dataDB = await this.loadData();
       let checkCode = dataDB.some((elem) => elem.code === newProduct.code);
       if (checkCode) {
         throw new Error(`Code already exist`);
