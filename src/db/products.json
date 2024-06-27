@@ -1,1 +1,223 @@
-[{"id":1,"title":"Motherboard ASUS TUF Gaming B450M","description":"Mother ASUS TUF Gaming B450M-PLUS II AM4 / DDR4 / ATX","price":130000,"thumbnail":["https://imagenes.compragamer.com/productos/compragamer_Imganen_general_21972_Mother_ASUS_TUF_B450M-PLUS_II_AM4_f445a9d2-grn.jpg"],"code":"mba001","stock":7,"status":true},{"id":2,"title":"Motherboard ASUS Prime B650M-A","description":"Mother ASUS PRIME B650M-A WIFI AM5 / DDR5 / ATX","price":175000,"thumbnail":["https://imagenes.compragamer.com/productos/compragamer_Imganen_general_37339_Mother_ASUS_PRIME_B650M-A_WIFI_AM5_DDR5_42f83416-grn.jpg"],"code":"mba002","stock":5,"status":true},{"id":3,"title":"Motherboard AsRock Steel Legend B760M","description":"Mother Asrock B760M Steel Legend WiFi LGA1700 / DDR5 / M-ATX","price":238000,"thumbnail":["https://imagenes.compragamer.com/productos/compragamer_Imganen_general_39586_Mother_Asrock_B760M_Steel_Legend_LGA1700_DDR5_WIFI_928e2291-grn.jpg"],"code":"mbi001","stock":10,"status":true},{"id":4,"title":"Motherboard AsRock Z790M PG","description":"Mother Asrock Z790M PG Lightning LGA1700 / DDR4 / M-ATX","price":235000,"thumbnail":["https://imagenes.compragamer.com/productos/compragamer_Imganen_general_39592_Mother_Asrock_Z790M_PG_Lightning_LGA_1700_DDR4__2eb64813-grn.jpg"],"code":"mbi002","stock":5,"status":true},{"id":5,"title":"Procesador AMD Ryzen 5 5600G 4.4GHz","description":"Procesador AMD Ryzen 5 5600G 4.4GHz Turbo + Wraith Stealth Cooler","price":190000,"thumbnail":["https://imagenes.compragamer.com/productos/compragamer_Imganen_general_27675_Procesador_AMD_Ryzen_5_5600G_4.4GHz_Turbo___Wraith_Stealth_Cooler_d4e323ea-grn.jpg"],"code":"pro001","stock":10,"status":true},{"id":6,"title":"Procesador AMD Ryzen 5 7600X 5.3GHz","description":"Procesador AMD Ryzen 5 7600X 5.3GHz Turbo AM5 - No incluye Cooler - C/Video","price":298000,"thumbnail":["https://imagenes.compragamer.com/productos/compragamer_Imganen_general_34349_Procesador_AMD_Ryzen_5_7600X_5.3GHz_Turbo_AM5_-_No_incluye_Cooler_-_C_VIDEO_cf0124c7-grn.jpg"],"code":"pro002","stock":6,"status":true},{"id":7,"title":"Procesador Intel Core i5 11400F 4.40GHz","description":"Procesador Intel Core i5 11400F 4.40GHz Turbo S1200 Rocket Lake","price":175000,"thumbnail":["https://imagenes.compragamer.com/productos/compragamer_Imganen_general_25687_Procesador_Intel_Core_i5_11400F_4.40GHz_Turbo_S1200_Rocket_Lake_64d136f0-grn.jpg"],"code":"pro003","stock":8,"status":true},{"id":8,"title":"Procesador Intel Core i7 12700KF 5.0GHz","description":"Procesador Intel Core i7 12700KF 5.0GHz Turbo Socket 1700 Alder Lake","price":377000,"thumbnail":["https://imagenes.compragamer.com/productos/compragamer_Imganen_general_29143_Procesador_Intel_Core_i7_12700KF_5.0GHz_Turbo_Socket_1700_Alder_Lake_c0a1cf31-grn.jpg"],"code":"pro004","stock":4,"status":true},{"id":9,"title":"Memoria Corsair DDR4 8GB 3200Mhz","description":"Memoria Corsair DDR4 8GB 3200Mhz Vengeance LPX Black CL16","price":29000,"thumbnail":["https://imagenes.compragamer.com/productos/compragamer_Imganen_general_39205_Memoria_Corsair_DDR4_8GB_3200Mhz_Vengeance_LPX_Black_CL16_fddb04d5-grn.jpg"],"code":"mem001","stock":8,"status":true},{"id":10,"title":"Memoria Team DDR4 16GB (2x8GB) 3200MHz","description":"Memoria Team DDR4 16GB (2x8GB) 3200MHz T-Force Delta TUF Alliance RGB CL16","price":65000,"thumbnail":["https://imagenes.compragamer.com/productos/compragamer_Imganen_general_24800_Memoria_Team_DDR4_16GB__2x8GB__3200MHz_T-Force_Delta_TUF_Alliance_RGB_CL16_bb467278-grn.jpg"],"code":"mem002","stock":3,"status":true},{"id":11,"title":"Memoria Kingston DDR5 16GB 5600Mhz","description":"Memoria Kingston DDR5 16GB 5600Mhz Fury Beast RGB CL40 Black","price":88000,"thumbnail":["https://imagenes.compragamer.com/productos/compragamer_Imganen_general_39073_Memoria_Kingston_DDR5_16GB_5600Mhz_Fury_Beast_RGB_CL40__Black_24abb8fc-grn.jpg"],"code":"mem003","stock":10,"status":true},{"id":12,"title":"Memoria Team DDR5 64GB (2x32GB) 5600MHz","description":"Memoria Team DDR5 64GB (2x32GB) 5600MHz T-Force Delta RGB CL36 White Intel XMP 3.0","price":266000,"thumbnail":["https://imagenes.compragamer.com/productos/compragamer_Imganen_general_38656_Memoria_Team_DDR5_64GB__2x32GB__5600MHz_T-Force_Delta_RGB_CL36_White_Intel_XMP_3.0___AMD_EXPO__3d4f5f02-grn.jpg"],"code":"mem004","stock":4,"status":true},{"id":13,"title":"MSI GeForce GTX 1650","description":"Placa de Video MSI GeForce GTX 1650 4GB GDDR6 Ventus XS OC","price":189000,"thumbnail":["https://imagenes.compragamer.com/productos/compragamer_Imganen_general_18725_Placa_de_Video_MSI_GeForce_GTX_1650_4GB_GDDR6_Ventus_XS_OC_ed050b8e-grn.jpg"],"code":"gpu001","stock":8,"status":true},{"id":14,"title":"MSI GeForce RTX 4060","description":"Placa de Video MSI GeForce RTX 4060 8GB GDDR6 Ventus 2X Black OC ","price":468000,"thumbnail":["https://imagenes.compragamer.com/productos/compragamer_Imganen_general_38706_Placa_de_Video_MSI_GeForce_RTX_4060_8GB_GDDR6_Ventus_2X_Black_OC_9fe672d0-grn.jpg"],"code":"gpu002","stock":5,"status":true},{"id":15,"title":"Asrock Radeon RX 5700","description":"Placa de Video Asrock Radeon RX 5700 8GB GDDR6 CHALLENGER OC","price":375000,"thumbnail":["https://imagenes.compragamer.com/productos/compragamer_Imganen_general_15805_Placa_de_Video_Asrock_Radeon_RX_5700_8GB_GDDR6_CHALLENGER_OC_5729f4ca-grn.jpg"],"code":"gpu003","stock":6,"status":true},{"id":16,"title":"XFX Radeon RX 6750 XT","description":"Placa de Video XFX Radeon RX 6750 XT 12GB GDDR6 SPEEDSTER QICK 319","price":475000,"thumbnail":["https://imagenes.compragamer.com/productos/compragamer_Imganen_general_36844_Placa_de_Video_XFX_Radeon_RX_6750_XT_12GB_GDDR6_SPEEDSTER_QICK_319_2d5495d9-grn.jpg"],"code":"gpu004","stock":4,"status":true},{"id":17,"title":"Monitor LG 32' / 32MN500M-B","description":"Monitor LG 32' (32MN500M-B) Full HD IPS 75Hz FreeSync","price":350000,"thumbnail":["https://imagenes.compragamer.com/productos/compragamer_Imganen_general_19489_Monitor_LG_32__32MN500M-B_Full_HD_IPS_75Hz_FreeSync_b9da8229-grn.jpg"],"code":"abc123","stock":10,"status":true}]
+[
+  {
+    "id": 1,
+    "title": "Motherboard ASUS TUF Gaming B450M",
+    "description": "Mother ASUS TUF Gaming B450M-PLUS II AM4 / DDR4 / ATX",
+    "price": 130000,
+    "category": "motherboard",
+    "thumbnail": [
+      "https://imagenes.compragamer.com/productos/compragamer_Imganen_general_21972_Mother_ASUS_TUF_B450M-PLUS_II_AM4_f445a9d2-grn.jpg"
+    ],
+    "code": "mba001",
+    "stock": 7,
+    "status": true
+  },
+  {
+    "id": 2,
+    "title": "Motherboard ASUS Prime B650M-A",
+    "description": "Mother ASUS PRIME B650M-A WIFI AM5 / DDR5 / ATX",
+    "price": 175000,
+    "category": "motherboard",
+    "thumbnail": [
+      "https://imagenes.compragamer.com/productos/compragamer_Imganen_general_37339_Mother_ASUS_PRIME_B650M-A_WIFI_AM5_DDR5_42f83416-grn.jpg"
+    ],
+    "code": "mba002",
+    "stock": 5,
+    "status": true
+  },
+  {
+    "id": 3,
+    "title": "Motherboard AsRock Steel Legend B760M",
+    "description": "Mother Asrock B760M Steel Legend WiFi LGA1700 / DDR5 / M-ATX",
+    "price": 238000,
+    "category": "motherboard",
+    "thumbnail": [
+      "https://imagenes.compragamer.com/productos/compragamer_Imganen_general_39586_Mother_Asrock_B760M_Steel_Legend_LGA1700_DDR5_WIFI_928e2291-grn.jpg"
+    ],
+    "code": "mbi001",
+    "stock": 10,
+    "status": true
+  },
+  {
+    "id": 4,
+    "title": "Motherboard AsRock Z790M PG",
+    "description": "Mother Asrock Z790M PG Lightning LGA1700 / DDR4 / M-ATX",
+    "price": 235000,
+    "category": "motherboard",
+    "thumbnail": [
+      "https://imagenes.compragamer.com/productos/compragamer_Imganen_general_39592_Mother_Asrock_Z790M_PG_Lightning_LGA_1700_DDR4__2eb64813-grn.jpg"
+    ],
+    "code": "mbi002",
+    "stock": 5,
+    "status": true
+  },
+  {
+    "id": 5,
+    "title": "Procesador AMD Ryzen 5 5600G 4.4GHz",
+    "description": "Procesador AMD Ryzen 5 5600G 4.4GHz Turbo + Wraith Stealth Cooler",
+    "price": 190000,
+    "category": "procesador",
+    "thumbnail": [
+      "https://imagenes.compragamer.com/productos/compragamer_Imganen_general_27675_Procesador_AMD_Ryzen_5_5600G_4.4GHz_Turbo___Wraith_Stealth_Cooler_d4e323ea-grn.jpg"
+    ],
+    "code": "pro001",
+    "stock": 10,
+    "status": true
+  },
+  {
+    "id": 6,
+    "title": "Procesador AMD Ryzen 5 7600X 5.3GHz",
+    "description": "Procesador AMD Ryzen 5 7600X 5.3GHz Turbo AM5 - No incluye Cooler - C/Video",
+    "price": 298000,
+    "category": "procesador",
+    "thumbnail": [
+      "https://imagenes.compragamer.com/productos/compragamer_Imganen_general_34349_Procesador_AMD_Ryzen_5_7600X_5.3GHz_Turbo_AM5_-_No_incluye_Cooler_-_C_VIDEO_cf0124c7-grn.jpg"
+    ],
+    "code": "pro002",
+    "stock": 6,
+    "status": true
+  },
+  {
+    "id": 7,
+    "title": "Procesador Intel Core i5 11400F 4.40GHz",
+    "description": "Procesador Intel Core i5 11400F 4.40GHz Turbo S1200 Rocket Lake",
+    "price": 175000,
+    "category": "procesador",
+    "thumbnail": [
+      "https://imagenes.compragamer.com/productos/compragamer_Imganen_general_25687_Procesador_Intel_Core_i5_11400F_4.40GHz_Turbo_S1200_Rocket_Lake_64d136f0-grn.jpg"
+    ],
+    "code": "pro003",
+    "stock": 8,
+    "status": true
+  },
+  {
+    "id": 8,
+    "title": "Procesador Intel Core i7 12700KF 5.0GHz",
+    "description": "Procesador Intel Core i7 12700KF 5.0GHz Turbo Socket 1700 Alder Lake",
+    "price": 377000,
+    "category": "procesador",
+    "thumbnail": [
+      "https://imagenes.compragamer.com/productos/compragamer_Imganen_general_29143_Procesador_Intel_Core_i7_12700KF_5.0GHz_Turbo_Socket_1700_Alder_Lake_c0a1cf31-grn.jpg"
+    ],
+    "code": "pro004",
+    "stock": 4,
+    "status": true
+  },
+  {
+    "id": 9,
+    "title": "Memoria Corsair DDR4 8GB 3200Mhz",
+    "description": "Memoria Corsair DDR4 8GB 3200Mhz Vengeance LPX Black CL16",
+    "price": 29000,
+    "category": "memoria",
+    "thumbnail": [
+      "https://imagenes.compragamer.com/productos/compragamer_Imganen_general_39205_Memoria_Corsair_DDR4_8GB_3200Mhz_Vengeance_LPX_Black_CL16_fddb04d5-grn.jpg"
+    ],
+    "code": "mem001",
+    "stock": 8,
+    "status": true
+  },
+  {
+    "id": 10,
+    "title": "Memoria Team DDR4 16GB (2x8GB) 3200MHz",
+    "description": "Memoria Team DDR4 16GB (2x8GB) 3200MHz T-Force Delta TUF Alliance RGB CL16",
+    "price": 65000,
+    "category": "memoria",
+    "thumbnail": [
+      "https://imagenes.compragamer.com/productos/compragamer_Imganen_general_24800_Memoria_Team_DDR4_16GB__2x8GB__3200MHz_T-Force_Delta_TUF_Alliance_RGB_CL16_bb467278-grn.jpg"
+    ],
+    "code": "mem002",
+    "stock": 3,
+    "status": true
+  },
+  {
+    "id": 11,
+    "title": "Memoria Kingston DDR5 16GB 5600Mhz",
+    "description": "Memoria Kingston DDR5 16GB 5600Mhz Fury Beast RGB CL40 Black",
+    "price": 88000,
+    "category": "memoria",
+    "thumbnail": [
+      "https://imagenes.compragamer.com/productos/compragamer_Imganen_general_39073_Memoria_Kingston_DDR5_16GB_5600Mhz_Fury_Beast_RGB_CL40__Black_24abb8fc-grn.jpg"
+    ],
+    "code": "mem003",
+    "stock": 10,
+    "status": true
+  },
+  {
+    "id": 12,
+    "title": "Memoria Team DDR5 64GB (2x32GB) 5600MHz",
+    "description": "Memoria Team DDR5 64GB (2x32GB) 5600MHz T-Force Delta RGB CL36 White Intel XMP 3.0",
+    "price": 266000,
+    "category": "memoria",
+    "thumbnail": [
+      "https://imagenes.compragamer.com/productos/compragamer_Imganen_general_38656_Memoria_Team_DDR5_64GB__2x32GB__5600MHz_T-Force_Delta_RGB_CL36_White_Intel_XMP_3.0___AMD_EXPO__3d4f5f02-grn.jpg"
+    ],
+    "code": "mem004",
+    "stock": 4,
+    "status": true
+  },
+  {
+    "id": 13,
+    "title": "MSI GeForce GTX 1650",
+    "description": "Placa de Video MSI GeForce GTX 1650 4GB GDDR6 Ventus XS OC",
+    "price": 189000,
+    "category": "gpu",
+    "thumbnail": [
+      "https://imagenes.compragamer.com/productos/compragamer_Imganen_general_18725_Placa_de_Video_MSI_GeForce_GTX_1650_4GB_GDDR6_Ventus_XS_OC_ed050b8e-grn.jpg"
+    ],
+    "code": "gpu001",
+    "stock": 8,
+    "status": true
+  },
+  {
+    "id": 14,
+    "title": "MSI GeForce RTX 4060",
+    "description": "Placa de Video MSI GeForce RTX 4060 8GB GDDR6 Ventus 2X Black OC ",
+    "price": 468000,
+    "category": "gpu",
+    "thumbnail": [
+      "https://imagenes.compragamer.com/productos/compragamer_Imganen_general_38706_Placa_de_Video_MSI_GeForce_RTX_4060_8GB_GDDR6_Ventus_2X_Black_OC_9fe672d0-grn.jpg"
+    ],
+    "code": "gpu002",
+    "stock": 5,
+    "status": true
+  },
+  {
+    "id": 15,
+    "title": "Asrock Radeon RX 5700",
+    "description": "Placa de Video Asrock Radeon RX 5700 8GB GDDR6 CHALLENGER OC",
+    "price": 375000,
+    "category": "gpu",
+    "thumbnail": [
+      "https://imagenes.compragamer.com/productos/compragamer_Imganen_general_15805_Placa_de_Video_Asrock_Radeon_RX_5700_8GB_GDDR6_CHALLENGER_OC_5729f4ca-grn.jpg"
+    ],
+    "code": "gpu003",
+    "stock": 6,
+    "status": true
+  },
+  {
+    "id": 16,
+    "title": "XFX Radeon RX 6750 XT",
+    "description": "Placa de Video XFX Radeon RX 6750 XT 12GB GDDR6 SPEEDSTER QICK 319",
+    "price": 475000,
+    "category": "gpu",
+    "thumbnail": [
+      "https://imagenes.compragamer.com/productos/compragamer_Imganen_general_36844_Placa_de_Video_XFX_Radeon_RX_6750_XT_12GB_GDDR6_SPEEDSTER_QICK_319_2d5495d9-grn.jpg"
+    ],
+    "code": "gpu004",
+    "stock": 4,
+    "status": true
+  },
+  {
+    "id": 17,
+    "title": "Monitor LG 32' / 32MN500M-B",
+    "description": "Monitor LG 32' (32MN500M-B) Full HD IPS 75Hz FreeSync",
+    "price": 350000,
+    "category": "monitor",
+    "thumbnail": [
+      "https://imagenes.compragamer.com/productos/compragamer_Imganen_general_19489_Monitor_LG_32__32MN500M-B_Full_HD_IPS_75Hz_FreeSync_b9da8229-grn.jpg"
+    ],
+    "code": "abc123",
+    "stock": 10,
+    "status": true
+  }
+]
