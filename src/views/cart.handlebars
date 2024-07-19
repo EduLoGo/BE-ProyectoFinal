@@ -1,0 +1,26 @@
+<div class="container">
+  {{#if products}}
+  <table class="table table-striped text-center align-middle border mt-3">
+    <thead>
+      <tr>
+        <th scope="col">Producto</th>
+        <th scope="col">Cantidad</th>
+        <th scope="col">Precio</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each products}}
+      <tr>
+        <td>{{product.title}}</td>
+        <td>{{quantity}}</td>
+        <td>$ {{product.price}}</td>
+        <td><button class="btn btn-danger" type="button">Quitar</button></td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+  {{else}}
+  <h3 class="text-center">No hay productos en el carrito</h3>
+  {{/if}}
+</div>

@@ -4,7 +4,7 @@
   {{#if dbProducts}}
     <div class="row justify-content-center">
       {{#each dbProducts}}
-        <article class="card m-2 col-12 col-md-5 shadowBox">
+        <article class="card cardbg m-2 col-12 col-md-5 shadowBox" id="{{id}}">
           <div class="row g-0">
             <div class="col-md-4 d-flex justify-content-center align-items-center">
               <img src={{thumbnail}} class="img-fluid rounded-start d-flex justify-content-center align-items-center" alt={{title}}/>
@@ -17,7 +17,8 @@
                 <p class="card-text d-flex justify-content-end">
                   <small class="text-body-secondary">Categoría: {{category}}</small>
                 </p>
-                <a href="#" class="btn btn-primary w-100">Ver Mas</a>
+                <p><small class="text-body-secondary">Stock: {{stock}}</small></p>
+                <a href="/products/{{id}}" class="btn btn-primary w-100">Ver Mas</a>
               </div>
             </div>
           </div>
@@ -30,3 +31,18 @@
   {{/if}}
   <hr />
 </section>
+<div class="row my-5">
+    <div class="col d-flex justify-content-center">
+      <div class="pagination justify-content-center">
+        {{#if hasPrevPage}}
+          <a href="{{prevLink}}" class="btn btn-light btn-outline-dark"> <-- </a>
+        {{/if}}
+        <button type="button" class="btn m-0 fw-bold btn-outline-dark" disabled>{{currentPage}} de {{totalPages}}</button>
+        {{#if hasNextPage}}
+          <a href="{{nextLink}}" class="btn btn-light btn-outline-dark"> --> </a>
+        {{/if}}
+      </div>
+      <div>
+      </div>
+    </div>
+  </div>

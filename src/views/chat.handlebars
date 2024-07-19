@@ -1,0 +1,16 @@
+  <h1 class="text-center p-2 text-bg-secondary">ChatRoom</h1>
+  <hr />
+<div class="container">
+  <div class="m-3">
+    <div class="input-group flex-nowrap">
+      <span class="input-group-text" id="addon-wrapping">Message:</span>
+      <input type="text" class="form-control" id="userMsg" aria-label="Username" aria-describedby="addon-wrapping">
+      <button type="submit" class="btn btn-primary" id="btnSend">Enviar</button>
+    </div>
+  </div>
+  <hr />
+  <div id="logMsg"></div>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/js/chat.js"></script>
+</div>

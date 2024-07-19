@@ -1,42 +1,85 @@
 <section class="container">
   <h1 class="d-flex justify-content-center">- Agregar Producto -</h1>
   <hr />
-    <div class="mt-2 mb-5 p-4 shadowBox">
-      <form class="row g-3" action="/realtimeproducts" method="POST" id="form">
-        <div class="col-6">
-          <label for="title" class="form-label markRequired">Nombre del Producto: </label>
-          <input type="text" class="form-control" name="title" id="title" required>
-        </div>
-        <div class="col-6">
-          <label for="description" class="form-label markRequired">Descripción :</label>
-          <input type="text" class="form-control" name="description" id="description" required>
-        </div>
-        <div class="col-6">
-          <label for="price" class="form-label markRequired">Precio: </label>
-          <input type="number" class="form-control" name="price" id="price" required>
-        </div>
-        <div class="col-6">
-          <label for="category" class="form-label markRequired">Categoría: </label>
-          <input type="text" class="form-control" name="category" id="category" required>
-        </div>
-        <div class="col-6">
-          <label for="thumbnail" class="form-label">Imagen:</label>
-          <input type="text" class="form-control" name="thumbnail" id="thumbnail">
-        </div>
-        <div class="col-6">
-          <label for="code" class="form-label markRequired">Código: </label>
-          <input type="text" class="form-control" name="code" id="code" required>
-        </div>
-        <div class="col-6">
-          <label for="stock" class="form-label markRequired">Stock: </label>
-          <input type="number" class="form-control" name="stock" id="stock" required>
-        </div>
-        <div class="col-12 d-flex justify-content-around">
-          <button type="reset" class="btn btn-secondary w-25">Borrar Todo</button>
-          <button type="submit" class="btn btn-primary w-25">Guardar</button>
-        </div>
-      </form>
-    </div>
+  <div class="mt-2 mb-5 p-4 shadowBox">
+    <form class="row g-3" action="/realtimeproducts" method="POST" id="form">
+      <div class="col-6">
+        <label for="title" class="form-label markRequired">Nombre del Producto:
+        </label>
+        <input
+          type="text"
+          class="form-control"
+          name="title"
+          id="title"
+          required
+        />
+      </div>
+      <div class="col-6">
+        <label for="description" class="form-label markRequired">Descripción :</label>
+        <input
+          type="text"
+          class="form-control"
+          name="description"
+          id="description"
+          required
+        />
+      </div>
+      <div class="col-6">
+        <label for="price" class="form-label markRequired">Precio: </label>
+        <input
+          type="number"
+          class="form-control"
+          name="price"
+          id="price"
+          required
+        />
+      </div>
+      <div class="col-6">
+        <label for="category" class="form-label markRequired">Categoría:
+        </label>
+        <input
+          type="text"
+          class="form-control"
+          name="category"
+          id="category"
+          required
+        />
+      </div>
+      <div class="col-6">
+        <label for="thumbnail" class="form-label">Imagen:</label>
+        <input
+          type="text"
+          class="form-control"
+          name="thumbnail"
+          id="thumbnail"
+        />
+      </div>
+      <div class="col-6">
+        <label for="code" class="form-label markRequired">Código: </label>
+        <input
+          type="text"
+          class="form-control"
+          name="code"
+          id="code"
+          required
+        />
+      </div>
+      <div class="col-6">
+        <label for="stock" class="form-label markRequired">Stock: </label>
+        <input
+          type="number"
+          class="form-control"
+          name="stock"
+          id="stock"
+          required
+        />
+      </div>
+      <div class="col-12 d-flex justify-content-around">
+        <button type="reset" class="btn btn-secondary w-25">Borrar Todo</button>
+        <button type="submit" class="btn btn-primary w-25">Guardar</button>
+      </div>
+    </form>
+  </div>
 </section>
 <hr />
 <section class="container-fluid">
@@ -45,7 +88,7 @@
   {{#if dbProducts}}
     <div class="row justify-content-center" id="cardProduct">
       {{#each dbProducts}}
-        <article class="card m-2 col-12 col-md-3 shadowBox " id="{{id}}">
+        <article class="card m-2 col-12 col-md-3 shadowBox" id="{{id}}">
           <div class="row h-100 g-2">
             <div class="col-md-4 d-flex justify-content-center align-items-center">
               <img src="{{thumbnail}}" class="img-fluid rounded-start" alt={{title}} />
@@ -54,9 +97,14 @@
               <div class="card-body">
                 <h5 class="card-title d-flex justify-content-center">{{title}}</h5>
                 <p class="card-text">{{description}}</p>
-                <p class="card-text d-flex justify-content-center"><strong>${{price}}</strong></p>
-                <p class="card-text d-flex justify-content-end">
+                <p class="card-text d-flex justify-content-center mb-5">
+                  <strong>${{price}}</strong>
+                </p>
+                <p class="card-text m-0 d-flex justify-content-end">
                   <small class="text-body-secondary">Categoría: {{category}}</small>
+                </p>
+                <p class="card-text m-0 d-flex justify-content-end">
+                  <small class="text-body-secondary">Code: {{code}}</small>
                 </p>
               </div>
             </div>
