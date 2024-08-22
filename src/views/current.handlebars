@@ -1,0 +1,35 @@
+<section class="container mt-3">
+  <div class="row">
+    {{#if user}}
+      <h3 class="mb-3 text-center">Mi Perfil</h3>
+      <hr />
+      <div class="d-flex justify-content-between align-items-center m-3">
+        <div>
+          <p><b>Nombre Completo:</b> {{user.first_name}}, {{user.last_name}}</p>
+          <p><b>Edad:</b> {{user.age}}</p>
+          <p><b>Email:</b> {{user.email}}</p>
+          <p><b>Privilegio:</b> {{user.role}}</p>
+          <a href="/carts/{{user.cartId}}" class="btn btn-secondary">Ver carrito</a>
+          <form class="mt-5" action="/api/sessions/logout" method="POST">
+            <button type="submit" class="btn btn-primary">Cerrar Sesión</button>
+          </form>
+        </div>
+        {{#if user.avatar}}
+          <div>
+            <img style="height: 360px;" src="{{user.avatar}}" alt="Avatar" />
+          </div>
+        {{else}}
+          <div>
+            <img style="height: 360px;" src="/img/avatarDefault.png" alt="Avatar" />
+          </div>
+        {{/if}}
+      </div>
+      <hr />
+    {{else}}
+      <div>
+        <h3 class="mb-3 text-center">Iniciar Sesión</h3>
+        <p></p>
+      </div>
+    {{/if}}
+  </div>
+</section>

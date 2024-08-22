@@ -2,6 +2,8 @@ import { Router } from "express";
 import { socketServer } from "../app.js";
 import { MongoProducts } from "../dao/db/mongoProducts.js";
 import { MongoCarts } from "../dao/db/mongoCarts.js";
+import jwt from "jsonwebtoken";
+import passport from "passport";
 
 const router = Router();
 const managerProduct = new MongoProducts();
@@ -11,6 +13,32 @@ router.get("/", (req, res) => {
   res.status(200).render("index", {
     pageTitle: "CoderHouse Project",
   });
+});
+
+router.get("/login", (req, res) => {
+  res.status(200).render("login", {
+    pageTitle: "Iniciar Sesión",
+  });
+});
+
+router.get("/register", (req, res) => {
+  res.status(200).render("register", {
+    pageTitle: "Crear Usuario",
+  });
+});
+
+router.get("/profile", async (req, res) => {
+  try {
+    const token = req.cookies["coderCookieToken"];
+    if (!token) {
+      res.redirect("/login");
+    }
+    const dataCookie = jwt.verify(token, "coderhouse");
+    res.render("current", {
+      pageTitle: "Mi Perfil",
+      user: dataCookie.payload,
+    });
+  } catch (error) {}
 });
 
 router.get("/products", async (req, res) => {
@@ -99,18 +127,27 @@ router.get("/carts/:cid", async (req, res) => {
 });
 
 router.get("/chatroom", (req, res) => {
-  res.status(200).render("chat");
+  res.status(200).render("chat", {
+    pageTitle: "ChatRoom",
+  });
 });
 
-router.get("/realtimeproducts", async (req, res) => {
-  try {
-    const dbProducts = await managerProduct.getProducts();
-    res.status(200).render("realtimeproducts", {
-      pageTitle: "CoderHouse Project",
-      dbProducts,
-    });
-  } catch (error) {}
-});
+router.get(
+  "/realtimeproducts",
+  passport.authenticate("current", { session: false }),
+  async (req, res) => {
+    try {
+      const user = req.user.payload;
+      const dbProducts = await managerProduct.getProducts();
+      res.status(200).render("realtimeproducts", {
+        pageTitle: "CoderHouse Project",
+        dbProducts,
+        userAdmin: user.role === "admin" ? true : false,
+      });
+    } catch (error) {
+    }
+  }
+);
 
 router.post("/realtimeproducts", async (req, res) => {
   try {

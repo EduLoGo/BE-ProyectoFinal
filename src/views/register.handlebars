@@ -1,0 +1,66 @@
+<div
+  class="container d-flex justify-content-center align-items-center mt-5 p-5"
+>
+  <div class="card text-white p-3 loginbox" style="width: 30rem;">
+    <h3 class="mb-3 text-center">Crear Cuenta</h3>
+    <form action="/api/sessions/register" method="POST">
+      <div class="mb-3">
+        <label for="first_name" class="form-label markRequired">Nombre: </label>
+        <input
+          type="text"
+          class="form-control"
+          name="first_name"
+          id="registerFirst_name"
+          required
+        />
+      </div>
+      <div class="mb-3">
+        <label for="last_name" class="form-label markRequired">Apellido:
+        </label>
+        <input
+          type="text"
+          class="form-control"
+          name="last_name"
+          id="registerLast_name"
+          required
+        />
+      </div>
+      <div class="mb-3">
+        <label for="age" class="form-label markRequired">Edad: </label>
+        <input
+          type="number"
+          class="form-control"
+          name="age"
+          id="registerAge"
+          required
+        />
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label markRequired">Correo Electrónico:
+        </label>
+        <input
+          type="email"
+          class="form-control"
+          name="email"
+          id="registerEmail"
+          required
+        />
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label markRequired">Contraseña:
+        </label>
+        <input
+          type="password"
+          class="form-control"
+          name="password"
+          id="registerPassword"
+          required
+        />
+      </div>
+      <div class="d-flex justify-content-around">
+        <button type="reset" class="btn btn-secondary">Borrar Todo</button>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </div>
+    </form>
+  </div>
+</div>

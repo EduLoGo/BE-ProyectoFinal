@@ -134,7 +134,40 @@ class MongoManager {
     }
   }
 
-  async cartDelProduct(idCart, idProduct) {}
+  async cartDelProduct(idCart, idProduct) { }
+  
+  /// Manejo de Usuarios
+
+  async userCreate(user) {
+    try {
+      const existMail = await this.db.findOne({ email: user.email });
+      if (existMail) {
+        return `The Email ${user.email} already exists in Database`;
+      }
+      const newUser = await this.db.create(user);
+      return newUser;
+    } catch (error) {
+      throw new Error("An error occurred: ", error.message);
+    }
+  }
+
+  async userExist(email) {
+    try {
+      const user = await this.db.findOne({ email });
+      return user;
+    } catch (error) {
+      throw new Error(error.message);
+    }
+  }
+
+  async userById(id) {
+    try {
+      const user = await this.db.findById(id);
+      return user;
+    } catch (error) {
+      throw new Error(error.message);
+    }
+  }
 
   /// Manejo de Mensajes
 

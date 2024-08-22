@@ -1,34 +1,40 @@
-<head>
-  <nav class="navbar navbar-expand-lg bg-dark-subtle">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="/">E-Commerce</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="d-flex justify-content-center collapse navbar-collapse" id="navbarNav">
+<nav class="navcfg navbar sticky-top navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand navbrand" href="/">E-Commerce</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <div class="d-flex justify-content-center">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="/">Inicio</a>
+            <a class="btn nav-link navbtn" href="/">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/products">Productos</a>
+            <a class="btn nav-link navbtn" href="/products">Productos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/chatroom">ChatRoom</a>
+            <a class="btn nav-link navbtn" href="/chatroom">ChatRoom</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/realtimeproducts">RealTimeProducts</a>
+            <a
+              class="btn nav-link navbtn"
+              href="/realtimeproducts"
+            >RealTimeProducts</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn nav-link navbtn" href="/profile">Perfil</a>
           </li>
         </ul>
       </div>
     </div>
-  </nav>
-</head>
+  </div>
+</nav>

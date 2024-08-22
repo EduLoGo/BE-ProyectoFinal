@@ -1,11 +1,11 @@
+{{#if userAdmin}}
 <section class="container">
-  <h1 class="d-flex justify-content-center">- Agregar Producto -</h1>
+  <h1 class="d-flex justify-content-center">Agregar Producto</h1>
   <hr />
   <div class="mt-2 mb-5 p-4 shadowBox">
     <form class="row g-3" action="/realtimeproducts" method="POST" id="form">
       <div class="col-6">
-        <label for="title" class="form-label markRequired">Nombre del Producto:
-        </label>
+        <label for="title" class="form-label markRequired">Nombre del Producto:</label>
         <input
           type="text"
           class="form-control"
@@ -88,20 +88,29 @@
   {{#if dbProducts}}
     <div class="row justify-content-center" id="cardProduct">
       {{#each dbProducts}}
-        <article class="card m-2 col-12 col-md-3 shadowBox" id="{{id}}">
+        <article class="card m-2 col-12 col-md-3 shadowBox" id="{{_id}}">
           <div class="row h-100 g-2">
-            <div class="col-md-4 d-flex justify-content-center align-items-center">
-              <img src="{{thumbnail}}" class="img-fluid rounded-start" alt={{title}} />
+            <div
+              class="col-md-4 d-flex justify-content-center align-items-center"
+            >
+              <img
+                src="{{thumbnail}}"
+                class="img-fluid rounded-start"
+                alt="{{title}}"
+              />
             </div>
             <div class="col-md-8 h-100">
               <div class="card-body">
-                <h5 class="card-title d-flex justify-content-center">{{title}}</h5>
+                <h5
+                  class="card-title d-flex justify-content-center"
+                >{{title}}</h5>
                 <p class="card-text">{{description}}</p>
                 <p class="card-text d-flex justify-content-center mb-5">
                   <strong>${{price}}</strong>
                 </p>
                 <p class="card-text m-0 d-flex justify-content-end">
-                  <small class="text-body-secondary">Categoría: {{category}}</small>
+                  <small class="text-body-secondary">Categoría:
+                    {{category}}</small>
                 </p>
                 <p class="card-text m-0 d-flex justify-content-end">
                   <small class="text-body-secondary">Code: {{code}}</small>
@@ -111,7 +120,7 @@
             <hr />
           </div>
           <div class="mt-4 mb-3 d-flex justify-content-around" id="btnEvents">
-            <button class="btn btn-primary">Ver Más</button>
+            <a href="/products/{{_id}}"><button class="btn btn-primary">Ver Más</button></a>
             <button class="btn btn-danger" id="btnDelete">Eliminar</button>
           </div>
         </article>
@@ -123,5 +132,8 @@
   {{/if}}
   <hr />
 </section>
+{{else}}
+  <h2 class="text-center mt-3">No posee permisos para acceder a esta vista</h2>
+{{/if}}
 <script src="/socket.io/socket.io.js"></script>
 <script src="/js/main.js"></script>

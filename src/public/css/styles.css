@@ -1,16 +1,60 @@
+:root {
+  --color1: #2c3639;
+  --color2: #3f4e4f;
+  --color3: #a27b5c;
+  --color4: #dcd7c9;
+  --color5: #ffffff;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-  background: rgb(185, 185, 185);
-  background: linear-gradient(
+  background-image: linear-gradient(
     180deg,
-    rgba(255, 255, 255, 1) 10%,
-    rgba(82, 39, 103, 0.5) 75%
+    hsl(27deg 28% 50%) 0%,
+    hsl(29deg 24% 65%) 29%,
+    hsl(37deg 22% 77%) 43%,
+    hsl(44deg 21% 86%) 57%,
+    hsl(44deg 20% 93%) 71%,
+    hsl(0deg 0% 100%) 100%
   );
+}
+
+.navcfg {
+  background-color: var(--color1) !important;
+}
+.navbrand{
+  color: var(--color4);
+}
+.navbtn {
+  color: var(--color4);
+  transition: 0.5s;
+  width: 150px;
+  margin: 0 2px;
+}
+.navbtn:hover{
+  color: var(--color1);
+  background-color: var(--color4);
+  border-radius: 50px;
+}
+
+.markRequired:after {
+  content: "*";
+  color: red;
+  margin-right: 5px;
+}
+/* Index */
+
+.loginbox {
+  backdrop-filter: blur(10px) saturate(200%);
+  -webkit-backdrop-filter: blur(10px) saturate(200%);
+  background-color: rgba(44, 54, 57, 0.8);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
 .shadowBox {
@@ -19,16 +63,9 @@ body {
 }
 
 .cardbg {
-  background: rgb(255, 255, 255);
   background: linear-gradient(
     45deg,
     rgba(255, 255, 255, 1) 75%,
     rgba(18, 61, 73, 1) 100%
   );
-}
-
-.markRequired:after {
-  content: "*";
-  color: red;
-  margin-right: 5px;
 }

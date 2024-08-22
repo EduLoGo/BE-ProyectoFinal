@@ -1,54 +1,5 @@
 const socket = io();
 
-let form = document.getElementById("form");
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  const formData = new FormData(form);
-  const formDataObject = {};
-  console.log(formDataObject)
-  formData.forEach((value, key) => {
-    formDataObject[key] = value;
-  });
-
-  fetch("/realtimeproducts", {
-    method: "POST",
-    headers: {
-      "content-type": "application/json",
-    },
-    body: JSON.stringify(formDataObject),
-  });
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-  const deleteButtons = document.querySelectorAll('#btnDelete');
-  console.log(deleteButtons)
-  deleteButtons.forEach(button => {
-    button.addEventListener('click', function() {
-      const article = this.closest('article');
-      const id = article.getAttribute('id');
-      const url = `/api/products/${id}`;
-      fetch(url, {
-        method: 'DELETE'
-      })
-      .then(response => {
-        if (response.ok) {
-          alertify.success('Producto ${id} eliminado');
-          return response.json();
-        } else {
-          throw new Error('Error al eliminar el producto');
-        }
-      })
-      .then(data => {
-        console.log('Producto eliminado:', data);
-        article.remove();
-      })
-      .catch(error => {
-        console.error('Error:', error);
-      });
-    });
-  });
-});
-
 socket.on("renderProducts", (newProduct) => {
   const mainDiv = document.getElementById("cardProduct");
   const newCard = document.createElement("article");
@@ -63,9 +14,14 @@ socket.on("renderProducts", (newProduct) => {
         <div class="card-body">
           <h5 class="card-title d-flex justify-content-center">${newProduct.title}</h5>
           <p class="card-text">${newProduct.description}</p>
-          <p class="card-text d-flex justify-content-center"><strong>$${newProduct.price}}</strong></p>
-          <p class="card-text d-flex justify-content-end">
+          <p class="card-text d-flex justify-content-center mb-5">
+            <strong>$ ${newProduct.price}</strong>
+          </p>
+          <p class="card-text m-0 d-flex justify-content-end">
             <small class="text-body-secondary">Categoría: ${newProduct.category}</small>
+          </p>
+          <p class="card-text m-0 d-flex justify-content-end">
+            <small class="text-body-secondary">Code: ${newProduct.code}</small>
           </p>
         </div>
       </div>
@@ -78,4 +34,80 @@ socket.on("renderProducts", (newProduct) => {
     `;
   mainDiv.appendChild(newCard);
   document.getElementById("form").reset();
+
+  // Eliminar
+  const deleteButtons = document.querySelectorAll("#btnDelete");
+  deleteButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      const article = this.closest("article");
+      const id = article.getAttribute("id");
+      const url = `/api/products/${id}`;
+      fetch(url, {
+        method: "DELETE",
+      })
+        .then((response) => {
+          if (response.ok) {
+            return response.json();
+          } else {
+            throw new Error("Error al eliminar el producto");
+          }
+        })
+        .then((data) => {
+          alertify.success(
+            `El producto ${data.payload[0].title} ha sido eliminado`
+          );
+          article.remove();
+        })
+        .catch((error) => {
+          alertify.error(`Error al eliminar el proyecto: ${error}`);
+        });
+    });
+  });
+});
+
+let form = document.getElementById("form");
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const formData = new FormData(form);
+  const formDataObject = {};
+  formData.forEach((value, key) => {
+    formDataObject[key] = value;
+  });
+
+  fetch(`/realtimeproducts`, {
+    method: "POST",
+    headers: {
+      "content-type": "application/json",
+    },
+    body: JSON.stringify(formDataObject),
+  });
+  console.log(formDataObject);
+});
+
+const deleteButtons = document.querySelectorAll("#btnDelete");
+deleteButtons.forEach((button) => {
+  button.addEventListener("click", function () {
+    const article = this.closest("article");
+    const id = article.getAttribute("id");
+    fetch(`/api/products/${id}`, {
+      method: "DELETE",
+    })
+      .then((response) => {
+        if (response.ok) {
+          return response.json();
+        } else {
+          throw new Error("Error al eliminar el producto");
+        }
+      })
+      .then((data) => {
+        console.log("Producto eliminado:", data.payload[0].title);
+        alertify.success(
+          `El producto ${data.payload[0].title} ha sido eliminado`
+        );
+        article.remove();
+      })
+      .catch((error) => {
+        alertify.error(`Error al eliminar el proyecto: ${error}`);
+      });
+  });
 });
