@@ -3,7 +3,9 @@ import { engine } from "express-handlebars";
 import { Server } from "socket.io";
 import { connectionMongo } from "./utils/dbConnection.js";
 import __dirname from "./utils.js";
+import configObject from "./config/config.js";
 
+// import session from "express-session";
 import passport from "passport";
 import initializePassport from "./config/passport.config.js";
 import cookieParser from "cookie-parser";
@@ -13,11 +15,11 @@ import productRouter from "./routes/products.router.js";
 import cartsRouter from "./routes/carts.router.js";
 import sessionsRouter from "./routes/sessions.router.js";
 
-import { MongoMessages } from "./dao/db/mongoMessages.js";
+import { MongoMessages } from "./dao/mongo/mongoMessages.js";
 const messagesManager = new MongoMessages();
 
 const app = express();
-const port = 8080;
+const port = configObject.port;
 
 app.engine("handlebars", engine());
 app.set("views", __dirname + "/views");

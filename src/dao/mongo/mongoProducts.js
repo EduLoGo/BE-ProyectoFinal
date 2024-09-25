@@ -1,5 +1,5 @@
 import MongoManager from "./mongoManager.js";
-import { productSchema } from "./models/products.model.js";
+import { productSchema } from "../models/products.model.js";
 
 export class MongoProducts extends MongoManager {
   constructor() {

@@ -1,5 +1,5 @@
 import MongoManager from "./mongoManager.js";
-import { messagesSchema } from "./models/messages.model.js";
+import { messagesSchema } from "../models/messages.model.js";
 
 export class MongoMessages extends MongoManager {
   constructor() {
